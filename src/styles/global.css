@@ -1,0 +1,41 @@
+/* src/styles/global.css */
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
+@import "tailwindcss";
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+}
+
+#app-container {
+  width: 390px;
+  height: 844px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#app-container.splash {
+  background-color: #8f1402;
+}
+
+.scrollbar-gutter-stable {
+  scrollbar-gutter: stable;
+}
+.scrollbar-gutter-stable::-webkit-scrollbar {
+  width: 8px;
+}
+.scrollbar-gutter-stable::-webkit-scrollbar-thumb {
+  background-color: #d1d5db; /* gray-300 */
+  border-radius: 4px;
+}
+.scrollbar-gutter-stable::-webkit-scrollbar-track {
+  background: transparent;
+}
